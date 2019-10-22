@@ -11,7 +11,13 @@ export class AppComponent {
   // adding constructor method;
   // runs before the content is rendered so it will display title from the constructor;
   constructor() {
-    console.log(123)
-    this.title = "Some other title";
+    this.changeName("Some other title")
   }
+  //creating a custom method
+  changeName(title: string): void {
+    this.title = title;
+  }
+
 }
+
+
