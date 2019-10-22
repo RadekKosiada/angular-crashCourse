@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //defining type
-  title: string = 'Crash course'
+  title: string = 'Crash course';
+  // adding constructor method;
+  // runs before the content is rendered so it will display title from the constructor;
+  constructor() {
+    console.log(123)
+    this.title = "Some other title";
+  }
 }
