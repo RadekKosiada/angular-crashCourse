@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Items } from '../../models/items';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+  someItems: Items[];
+
   constructor() { }
 
   ngOnInit() {
+    this.someItems = [
+      {
+        id: 1,
+        title: 'Some Title',
+        completed: false
+      },
+      {
+        id: 2,
+        title: 'Some Other Title',
+        completed: true
+      }
+    ]
   }
 
 }
