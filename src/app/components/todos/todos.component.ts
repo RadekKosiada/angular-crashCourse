@@ -21,6 +21,7 @@ export class TodosComponent implements OnInit {
   }
 
   deleteTodo(todo: Todo) {
-    console.log("delete me", todo.id)
+    // updating UI
+    this.todos = this.todos.filter(t=> t.id !== todo.id);
   }
 }
