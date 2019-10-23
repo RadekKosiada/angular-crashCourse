@@ -8,12 +8,12 @@ import { Items } from '../../models/items';
 })
 export class ListComponent implements OnInit {
 
-  someItems: Items[];
+  items: Items[];
 
   constructor() { }
 
   ngOnInit() {
-    this.someItems = [
+    this.items = [
       {
         id: 1,
         title: 'Some Title',
